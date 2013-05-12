@@ -1,0 +1,14 @@
+prefix=./build_armv7
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavdevice
+Description: FFmpeg device handling library
+Version: 55.0.100
+Requires: libavfilter = 3.64.100, libavformat = 55.4.101
+Requires.private: 
+Conflicts:
+Libs: -L${libdir} -lavdevice -lm -lz
+Libs.private: 
+Cflags: -I${includedir}

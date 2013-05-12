@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BED32018173F8CB000C9E842 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED32017173F8CB000C9E842 /* OpenAL.framework */; };
+		BED3201A173F8CBA00C9E842 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED32019173F8CBA00C9E842 /* AudioToolbox.framework */; };
+		BED3201C173F8CD900C9E842 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED3201B173F8CD900C9E842 /* CoreAudio.framework */; };
+		BED3201F173F8D0400C9E842 /* KNAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BED3201E173F8CFF00C9E842 /* KNAudioManager.m */; };
 		BED559691738820B0060EBBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED559681738820B0060EBBA /* UIKit.framework */; };
 		BED5596B1738820B0060EBBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED5596A1738820B0060EBBA /* Foundation.framework */; };
 		BED5596D1738820B0060EBBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED5596C1738820B0060EBBA /* CoreGraphics.framework */; };
@@ -24,8 +28,6 @@
 		BED559EA173885430060EBBA /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BED559E2173885430060EBBA /* libavformat.a */; };
 		BED559EB173885430060EBBA /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BED559E3173885430060EBBA /* libavutil.a */; };
 		BED559EC173885430060EBBA /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BED559E4173885430060EBBA /* libswresample.a */; };
-		BED559ED173885430060EBBA /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BED559E5173885430060EBBA /* libswscale.a */; };
-		BED559EE173885430060EBBA /* 아카이브.zip in Resources */ = {isa = PBXBuildFile; fileRef = BED559E6173885430060EBBA /* 아카이브.zip */; };
 		BED559F21738855C0060EBBA /* KNFFmpegFileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = BED559F11738855C0060EBBA /* KNFFmpegFileReader.m */; };
 		BED559F4173885670060EBBA /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BED559F3173885670060EBBA /* libz.1.1.3.dylib */; };
 		BED559F61738856C0060EBBA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED559F51738856C0060EBBA /* OpenGLES.framework */; };
@@ -35,6 +37,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BED32017173F8CB000C9E842 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		BED32019173F8CBA00C9E842 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BED3201B173F8CD900C9E842 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		BED3201D173F8CFF00C9E842 /* KNAudioManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KNAudioManager.h; sourceTree = "<group>"; };
+		BED3201E173F8CFF00C9E842 /* KNAudioManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KNAudioManager.m; sourceTree = "<group>"; };
 		BED559651738820B0060EBBA /* RTSPPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTSPPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED559681738820B0060EBBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BED5596A1738820B0060EBBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -132,7 +139,6 @@
 		BED559E3173885430060EBBA /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavutil.a; sourceTree = "<group>"; };
 		BED559E4173885430060EBBA /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
 		BED559E5173885430060EBBA /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
-		BED559E6173885430060EBBA /* 아카이브.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "아카이브.zip"; sourceTree = "<group>"; };
 		BED559F01738855C0060EBBA /* KNFFmpegFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNFFmpegFileReader.h; sourceTree = "<group>"; };
 		BED559F11738855C0060EBBA /* KNFFmpegFileReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNFFmpegFileReader.m; sourceTree = "<group>"; };
 		BED559F3173885670060EBBA /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
@@ -149,6 +155,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BED3201C173F8CD900C9E842 /* CoreAudio.framework in Frameworks */,
+				BED3201A173F8CBA00C9E842 /* AudioToolbox.framework in Frameworks */,
+				BED32018173F8CB000C9E842 /* OpenAL.framework in Frameworks */,
 				BED559F8173885710060EBBA /* QuartzCore.framework in Frameworks */,
 				BED559F61738856C0060EBBA /* OpenGLES.framework in Frameworks */,
 				BED559F4173885670060EBBA /* libz.1.1.3.dylib in Frameworks */,
@@ -161,7 +170,6 @@
 				BED559EA173885430060EBBA /* libavformat.a in Frameworks */,
 				BED559EB173885430060EBBA /* libavutil.a in Frameworks */,
 				BED559EC173885430060EBBA /* libswresample.a in Frameworks */,
-				BED559ED173885430060EBBA /* libswscale.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +198,9 @@
 		BED559671738820B0060EBBA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BED3201B173F8CD900C9E842 /* CoreAudio.framework */,
+				BED32019173F8CBA00C9E842 /* AudioToolbox.framework */,
+				BED32017173F8CB000C9E842 /* OpenAL.framework */,
 				BED559F7173885710060EBBA /* QuartzCore.framework */,
 				BED559F51738856C0060EBBA /* OpenGLES.framework */,
 				BED559F3173885670060EBBA /* libz.1.1.3.dylib */,
@@ -232,7 +243,6 @@
 			children = (
 				BED5598C173885430060EBBA /* include */,
 				BED559DE173885430060EBBA /* lib */,
-				BED559E6173885430060EBBA /* 아카이브.zip */,
 			);
 			path = FFmpeg_Angel;
 			sourceTree = "<group>";
@@ -391,6 +401,8 @@
 		BED559EF1738855C0060EBBA /* wrapper */ = {
 			isa = PBXGroup;
 			children = (
+				BED3201D173F8CFF00C9E842 /* KNAudioManager.h */,
+				BED3201E173F8CFF00C9E842 /* KNAudioManager.m */,
 				BED559F01738855C0060EBBA /* KNFFmpegFileReader.h */,
 				BED559F11738855C0060EBBA /* KNFFmpegFileReader.m */,
 				BED559F9173885B40060EBBA /* KNFFmpegDecoder.h */,
@@ -458,7 +470,6 @@
 				BED5597D1738820B0060EBBA /* Default@2x.png in Resources */,
 				BED5597F1738820B0060EBBA /* Default-568h@2x.png in Resources */,
 				BED559821738820B0060EBBA /* MainStoryboard.storyboard in Resources */,
-				BED559EE173885430060EBBA /* 아카이브.zip in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +480,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BED3201F173F8D0400C9E842 /* KNAudioManager.m in Sources */,
 				BED559FD173887980060EBBA /* KNFFmpegDecoder.m in Sources */,
 				BED559FE173887980060EBBA /* KNGLView.m in Sources */,
 				BED559751738820B0060EBBA /* main.m in Sources */,
@@ -607,6 +619,7 @@
 				BED5598A1738820B0060EBBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

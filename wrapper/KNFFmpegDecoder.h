@@ -17,8 +17,11 @@
 
 
 @interface KNFFmpegDecoder : NSObject
-- (id)initWithCodecContext:(AVCodecContext *)codecCtx
-          videoStreamIndex:(int)index;
+
+- (id)initWithVideoCodecCtx:(AVCodecContext *)vcodecCtx
+                videoStream:(int)vstream
+              audioCodecCtx:(AVCodecContext *)acodecCtx
+                audioStream:(int)astream;
 
 /*
     frameData key
@@ -28,8 +31,15 @@
     udata
     vdata
  */
-- (void)decodeFrame:(AVPacket *)packet
+//- (void)decodeFrame:(AVPacket *)packet
+//         completion:(void(^)(NSDictionary* frameData))completion;
+
+- (void)decodeVideo:(AVPacket *)packet
          completion:(void(^)(NSDictionary* frameData))completion;
+
+- (void)decodeAudio:(AVPacket *)packet
+         completion:(void(^)(NSDictionary* frameData))completion;
+
 
 - (void)endDecode;
 @end

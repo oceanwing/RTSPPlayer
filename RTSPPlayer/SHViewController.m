@@ -10,17 +10,20 @@
 #import "KNGLView.h"
 #import "KNFFmpegFileReader.h"
 #import "KNFFmpegDecoder.h"
+#import "KNAudioManager.h"
 
 @interface SHViewController ()
 @property (retain, nonatomic) KNGLView* glView;
 @property (retain, nonatomic) KNFFmpegFileReader* reader;
 @property (retain, nonatomic) KNFFmpegDecoder* decoder;
+@property (retain, nonatomic) KNAudioManager* audioMgr;
 @end
 
 @implementation SHViewController
 
 @synthesize tfURL = _tfURL;
 @synthesize viewRender = _viewRender;
+@synthesize audioMgr = _audioMgr;
 
 - (void)dealloc {
     [_tfURL release];
@@ -36,6 +39,14 @@
     self.glView = glView;
     [glView release];
     [self.viewRender addSubview:_glView];
+    
+    KNAudioManager* am  = [[KNAudioManager alloc] init];
+    self.audioMgr = am;
+    [am release];
+    
+    _audioMgr.outputBlock = ^(float *data, UInt32 numFrames, UInt32 numChannels) {
+        
+    };
 }
 
 - (void)didReceiveMemoryWarning
@@ -67,7 +78,10 @@
         self.reader = r;
         [r release];
         
-        KNFFmpegDecoder* d = [[KNFFmpegDecoder alloc] initWithCodecContext:_reader.videoCodecCtx videoStreamIndex:_reader.videoStreamIndex];
+        KNFFmpegDecoder* d = [[KNFFmpegDecoder alloc] initWithVideoCodecCtx:_reader.videoCodecCtx
+                                                                videoStream:_reader.videoStreamIndex
+                                                              audioCodecCtx:_reader.audioCodecCtx
+                                                                audioStream:_reader.audioStreamIndex];
         self.decoder = d;
         [d release];
         
@@ -76,8 +90,14 @@
             
             if (streamIndex == _reader.videoStreamIndex) {
 
-                [_decoder decodeFrame:packet completion:^(NSDictionary *frameData) {
+                [_decoder decodeVideo:packet completion:^(NSDictionary *frameData) {
                     [_glView render:frameData];
+                }];
+            }
+            
+            if (streamIndex == _reader.audioStreamIndex) {
+                [_decoder decodeAudio:packet completion:^(NSDictionary *frameData) {
+                    NSLog(@"audio dec data size : %d", [[frameData objectForKey:@"size"] integerValue]);
                 }];
             }
            

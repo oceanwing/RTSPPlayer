@@ -1,0 +1,14 @@
+prefix=./build_armv7
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 3.64.100
+Requires: libswresample = 0.17.102, libswscale = 2.3.100, libavformat = 55.4.101, libavcodec = 55.7.100, libavutil = 52.30.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir} -lavfilter -lm -lz
+Libs.private: 
+Cflags: -I${includedir}

@@ -17,6 +17,7 @@
 @property (retain, nonatomic) KNFFmpegFileReader* reader;
 @property (retain, nonatomic) KNFFmpegDecoder* decoder;
 @property (retain, nonatomic) KNAudioManager* audioMgr;
+@property (retain, nonatomic) NSMutableArray* audioQueue;
 @end
 
 @implementation SHViewController
@@ -24,6 +25,7 @@
 @synthesize tfURL = _tfURL;
 @synthesize viewRender = _viewRender;
 @synthesize audioMgr = _audioMgr;
+@synthesize audioQueue = _audioQueue;
 
 - (void)dealloc {
     [_tfURL release];
@@ -44,9 +46,24 @@
     self.audioMgr = am;
     [am release];
     
+    
+    NSMutableArray* arr = [[NSMutableArray alloc] init];
+    self.audioQueue = arr;
+    [arr release];
+    
     _audioMgr.outputBlock = ^(float *data, UInt32 numFrames, UInt32 numChannels) {
+        NSDictionary* audio = [_audioQueue objectAtIndex:0];
         
+        NSMutableData* adata = [audio objectForKey:@"data"];
+        int size = [[audio objectForKey:@"size"] intValue];
+        
+        memcpy(data, adata.mutableBytes, size);
+
+        @synchronized (self){
+            [_audioQueue removeObject:audio];
+        }
     };
+    [_audioMgr play];
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,9 +73,7 @@
 
 - (IBAction)playStop:(id)sender {
 
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        
-        [_btnPlay setEnabled:NO];
+    [_btnPlay setEnabled:NO];
         
         NSString* url = _tfURL.text;
         NSLog(@"URL : %@", _tfURL.text);
@@ -67,6 +82,7 @@
             url = _tfURL.placeholder;
         }
 
+//        NSString* url = [[NSBundle mainBundle] pathForResource:@"hello" ofType:@"mp4"];
         
         
         if (!url || url.length <= 0) {
@@ -74,7 +90,10 @@
             return;
         }
         
-        KNFFmpegFileReader* r = [[KNFFmpegFileReader alloc] initWithURL:url withOption:kNetTCP];
+        KNFFmpegFileReader* r = [[KNFFmpegFileReader alloc] initWithURL:url withOption:kNetUDP];
+        if (nil == r)
+            return;
+        
         self.reader = r;
         [r release];
         
@@ -91,23 +110,32 @@
             if (streamIndex == _reader.videoStreamIndex) {
 
                 [_decoder decodeVideo:packet completion:^(NSDictionary *frameData) {
-                    [_glView render:frameData];
+                    @synchronized (self){
+                        [_glView render:frameData];
+                    }
                 }];
             }
             
             if (streamIndex == _reader.audioStreamIndex) {
                 [_decoder decodeAudio:packet completion:^(NSDictionary *frameData) {
-                    NSLog(@"audio dec data size : %d", [[frameData objectForKey:@"size"] integerValue]);
+                    @synchronized (self){
+                        [self.audioQueue addObject:frameData];
+                    }
                 }];
             }
            
         } completion:^(BOOL finish) {
             NSLog(@"-> done");
             
+            [_reader release];
+            _reader = nil;
+            
+            [_decoder endDecode];
+            [_decoder release];
+            _decoder = nil;
+            
             [_btnPlay setEnabled:YES];
         }];
-        
-    });
 }
 
 

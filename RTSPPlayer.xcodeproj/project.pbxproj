@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE0BE64E1740819B00F12490 /* hello.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BE0BE64D1740813E00F12490 /* hello.mp4 */; };
 		BED32018173F8CB000C9E842 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED32017173F8CB000C9E842 /* OpenAL.framework */; };
 		BED3201A173F8CBA00C9E842 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED32019173F8CBA00C9E842 /* AudioToolbox.framework */; };
 		BED3201C173F8CD900C9E842 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED3201B173F8CD900C9E842 /* CoreAudio.framework */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE0BE64D1740813E00F12490 /* hello.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hello.mp4; sourceTree = "<group>"; };
 		BED32017173F8CB000C9E842 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		BED32019173F8CBA00C9E842 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		BED3201B173F8CD900C9E842 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
@@ -179,6 +181,7 @@
 		BED5595C1738820B0060EBBA = {
 			isa = PBXGroup;
 			children = (
+				BE0BE64D1740813E00F12490 /* hello.mp4 */,
 				BED559EF1738855C0060EBBA /* wrapper */,
 				BED5598B173885430060EBBA /* FFmpeg_Angel */,
 				BED5596E1738820B0060EBBA /* RTSPPlayer */,
@@ -465,6 +468,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE0BE64E1740819B00F12490 /* hello.mp4 in Resources */,
 				BED559731738820B0060EBBA /* InfoPlist.strings in Resources */,
 				BED5597B1738820B0060EBBA /* Default.png in Resources */,
 				BED5597D1738820B0060EBBA /* Default@2x.png in Resources */,

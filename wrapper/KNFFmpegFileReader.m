@@ -53,11 +53,14 @@
 
     self = [super init];
     if (self) {
+        
+        _videoStreamIndex = _audioStreamIndex = -1;
+        
         self.inputURL = url;
         netOption_ = opt;
         if ([self initInput] == NO) {
-            return nil;
             [self release];
+            return nil;
         }
     }
     return self;
@@ -88,7 +91,12 @@
         NSLog(@"avformat_find_stream_info failed.");
         return NO;
     }
-    
+
+    if (_formatCtx->nb_streams <= 0) {
+        NSLog(@"avformat_find_stream_info nb_stream is 0.");
+        return NO;
+    }
+
     for (int i = 0; i < _formatCtx->nb_streams; i++) {
         if (_formatCtx->streams[i]->codec->codec_type == AVMEDIA_TYPE_VIDEO) {
             _videoStreamIndex = i;
@@ -125,38 +133,41 @@
         NSLog(@"Frame read canceled.");
         return;
     }
-    
-    AVPacket packet;
-    av_init_packet(&packet);
-    BOOL cancel = NO;
 
-    while (av_read_frame(_formatCtx, &packet) >= 0) {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         
-        @synchronized(self){
-            if (readBlock) {
-                readBlock(&packet, packet.stream_index);
+        AVPacket packet;
+        av_init_packet(&packet);
+        BOOL cancel = NO;
+
+        while (av_read_frame(_formatCtx, &packet) >= 0) {
+            
+            @synchronized(self){
+                if (readBlock) {
+                    readBlock(&packet, packet.stream_index);
+                }
+                av_free_packet(&packet);
+                av_init_packet(&packet);
             }
-            av_free_packet(&packet);
-            av_init_packet(&packet);
+            
+            if (cancelReadFrame_) {
+                cancel = YES;
+                break;
+            }
         }
+        avcodec_close(_videoCodecCtx);
+        _videoCodecCtx = NULL;
         
-        if (cancelReadFrame_) {
-            cancel = YES;
-            break;
-        }
-    }
-    avcodec_close(_videoCodecCtx);
-    _videoCodecCtx = NULL;
-    
-    avcodec_close(_audioCodecCtx);
-    _audioCodecCtx = NULL;
+        avcodec_close(_audioCodecCtx);
+        _audioCodecCtx = NULL;
 
-    avformat_close_input(&_formatCtx);
-    _formatCtx = NULL;
-    
-    if (completion) {
-        completion(!cancel);
-    }
+        avformat_close_input(&_formatCtx);
+        _formatCtx = NULL;
+        
+        if (completion) {
+            completion(!cancel);
+        }
+    });
 }
 
 - (void)cancelReadFrame {

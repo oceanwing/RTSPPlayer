@@ -1,0 +1,501 @@
+TRTSPPlayer
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/Info.plist RTSPPlayer/RTSPPlayer-Info.plist
+cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist build/Debug-iphoneos/RTSPPlayer.app/ResourceRules.plist
+cProcessPCH /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/RTSPPlayer-Prefix-edjbfrokcqqpaqaqkjctgtiogczm/RTSPPlayer-Prefix.pch.pth RTSPPlayer/RTSPPlayer-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNGLView.o /Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNGLView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNAudioManager.o /Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNAudioManager.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNFFmpegDecoder.o /Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNFFmpegDecoder.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/main.o /Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/SHAppDelegate.o /Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/SHAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/SHViewController.o /Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/SHViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNFFmpegFileReader.o /Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNFFmpegFileReader.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/RTSPPlayer normal armv7
+cGenerateDSYMFile /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app.dSYM /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/RTSPPlayer
+cCpResource hello.mp4 build/Debug-iphoneos/RTSPPlayer.app/hello.mp4
+cCopyStringsFile /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/en.lproj/InfoPlist.strings RTSPPlayer/en.lproj/InfoPlist.strings
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk
+c0000000050ED385D0000000000000110
+t1357723741
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist
+c00000000516DFD3900000000000001A7
+t1366162745
+s423
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist
+c00000000516DFD3900000000000001E5
+t1366162745
+s485
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c00000000516DFD3C00000000006B1F40
+t1366162748
+s7020352
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+c00000000516DFD3C00000000000FE270
+t1366162748
+s1041008
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000516DFD3D0000000000322700
+t1366162749
+s3286784
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000516DFD3E000000000062AD10
+t1366162750
+s6466832
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c00000000516DFD3D00000000000015F7
+t1366162749
+s5623
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/OpenAL.framework/OpenAL
+c00000000516DFD3F000000000005C570
+t1366162751
+s378224
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c00000000516DFD3F0000000000024190
+t1366162751
+s147856
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c00000000516DFD4000000000003596B0
+t1366162752
+s3511984
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c00000000516DFD3F0000000000000E8D
+t1366162751
+s3725
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000516DFD4300000000011BCDF0
+t1366162755
+s18599408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/include/Availability.h
+c00000000516DFD480000000000001B73
+t1366162760
+s7027
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/lib/libz.1.1.3.dylib
+c00000000516DFD4B0000000000022520
+t1366162763
+s140576
+
+N/Users/ken/Library/MobileDevice/Provisioning Profiles/8DF0B3A2-5773-48DD-8E4B-2B2C639B2D51.mobileprovision
+c0000000051529FE70000000000002C74
+t1364369383
+s11380
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/FFmpeg_Angel/lib/libavcodec.a
+c0000000051902AB90000000002133318
+t1368402617
+s34812696
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/FFmpeg_Angel/lib/libavdevice.a
+c0000000051902AB900000000000111D0
+t1368402617
+s70096
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/FFmpeg_Angel/lib/libavfilter.a
+c0000000051902AB900000000002CA870
+t1368402617
+s2926704
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/FFmpeg_Angel/lib/libavformat.a
+c0000000051902ABA00000000010CA490
+t1368402618
+s17605776
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/FFmpeg_Angel/lib/libavutil.a
+c0000000051902ABA000000000009DEC0
+t1368402618
+s646848
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/FFmpeg_Angel/lib/libswresample.a
+c0000000051902ABA000000000002F958
+t1368402618
+s194904
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/Default-568h@2x.png
+c0000000051902ABA00000000000048A2
+t1368402618
+s18594
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/Default.png
+c0000000051902ABA000000000000198C
+t1368402618
+s6540
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/Default@2x.png
+c0000000051902ABA0000000000003EEB
+t1368402618
+s16107
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/RTSPPlayer-Prefix.pch
+c0000000051902ABA0000000000000143
+t1368402618
+s323
+i<Availability.h>
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/SHAppDelegate.m
+c0000000051902ABA0000000000000815
+t1368402618
+s2069
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/SHViewController.m
+c0000000051908D9A00000000000010B8
+t1368427930
+s4280
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/en.lproj/InfoPlist.strings
+c0000000051902ABA000000000000002D
+t1368402618
+s45
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/en.lproj/MainStoryboard.storyboard
+c0000000051908CBB0000000000001599
+t1368427707
+s5529
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/main.m
+c0000000051902ABA000000000000014B
+t1368402618
+s331
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app.dSYM
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/Default-568h@2x.png
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/Default.png
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/Default@2x.png
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/Info.plist
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/PkgInfo
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/RTSPPlayer
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/ResourceRules.plist
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/embedded.mobileprovision
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/en.lproj/MainStoryboard.storyboardc
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/hello.mp4
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNAudioManager.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNFFmpegDecoder.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNFFmpegFileReader.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNGLView.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/RTSPPlayer.LinkFileList
+c00000000519ECCC70000000000000384
+t1369361607
+s900
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/SHAppDelegate.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/SHViewController.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/main.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer.xcent
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/hello.mp4
+c00000000000000000000000000000000
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNAudioManager.m
+c00000000519081810000000000003CBE
+t1368424833
+s15550
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNFFmpegDecoder.m
+c000000005190942E0000000000002775
+t1368429614
+s10101
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNFFmpegFileReader.m
+c0000000051908C390000000000001265
+t1368427577
+s4709
+
+N/Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNGLView.m
+c0000000051902ABA00000000000036A6
+t1368402618
+s13990
+
+N/var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/RTSPPlayer-Prefix-edjbfrokcqqpaqaqkjctgtiogczm/RTSPPlayer-Prefix.pch.pth
+t1368402700
+s4596868
+
+NRTSPPlayer/RTSPPlayer-Info.plist
+c0000000051902ABA000000000000046C
+t1368402618
+s1132
+
+CBuild AST from /Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/SHAppDelegate.m
+r0
+
+CBuild AST from /Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/SHViewController.m
+r0
+
+CBuild AST from /Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/main.m
+r0
+
+CBuild AST from /Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNAudioManager.m
+r0
+
+CBuild AST from /Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNFFmpegDecoder.m
+r0
+
+CBuild AST from /Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNFFmpegFileReader.m
+r0
+
+CBuild AST from /Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNGLView.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesbfd7e446044fb741^66da0247044fb741^---0#1#0#--18"Check dependencies36"FF55BC14-AC36-4355-BE7D-F2D528FEAB0E-
+
+CCodeSign /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app
+r0
+
+CCompileC build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNAudioManager.o /Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNAudioManager.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s391054407.061187
+e391054407.419714
+r1
+xCompileC
+xbuild/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNAudioManager.o
+x/Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNAudioManager.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNAudioManager.m32e90f47044fb741^52816b47044fb741^---0#0#0#-19%DVTDocumentLocation2@77"file://localhost/Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNAudioManager.m0000000000000000^3063"CompileC build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNAudioManager.o wrapper/KNAudioManager.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/RTSPPlayer    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/include -IFFmpeg_Angel/include -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/DerivedSources/armv7 -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/RTSPPlayer-Prefix-edjbfrokcqqpaqaqkjctgtiogczm/RTSPPlayer-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNAudioManager.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNAudioManager.dia -c /Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNAudioManager.m -o /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNAudioManager.o36"21982538-2051-46A2-916D-E7E8E7A3F804-
+
+CCompileC build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNFFmpegDecoder.o /Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNFFmpegDecoder.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s391054407.406760
+e391054407.523635
+r1
+xCompileC
+xbuild/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNFFmpegDecoder.o
+x/Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNFFmpegDecoder.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNFFmpegDecoder.mfd496847044fb741^070c8647044fb741^---0#0#0#-19%DVTDocumentLocation2@78"file://localhost/Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNFFmpegDecoder.m0000000000000000^3069"CompileC build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNFFmpegDecoder.o wrapper/KNFFmpegDecoder.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/RTSPPlayer    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/include -IFFmpeg_Angel/include -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/DerivedSources/armv7 -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/RTSPPlayer-Prefix-edjbfrokcqqpaqaqkjctgtiogczm/RTSPPlayer-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNFFmpegDecoder.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNFFmpegDecoder.dia -c /Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNFFmpegDecoder.m -o /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNFFmpegDecoder.o36"8AD17AFB-B807-4949-83DA-B81E10426715-
+
+CCompileC build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNFFmpegFileReader.o /Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNFFmpegFileReader.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s391054407.608225
+e391054407.711695
+r1
+xCompileC
+xbuild/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNFFmpegFileReader.o
+x/Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNFFmpegFileReader.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNFFmpegFileReader.m2cd79b47044fb741^fd30b647044fb741^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNFFmpegFileReader.m0000000000000000^3087"CompileC build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNFFmpegFileReader.o wrapper/KNFFmpegFileReader.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/RTSPPlayer    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/include -IFFmpeg_Angel/include -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/DerivedSources/armv7 -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/RTSPPlayer-Prefix-edjbfrokcqqpaqaqkjctgtiogczm/RTSPPlayer-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNFFmpegFileReader.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNFFmpegFileReader.dia -c /Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNFFmpegFileReader.m -o /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNFFmpegFileReader.o36"E25ED428-2AB8-4D95-92B6-B1270090A8B0-
+
+CCompileC build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNGLView.o /Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNGLView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s391054407.059810
+e391054407.405447
+r1
+xCompileC
+xbuild/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNGLView.o
+x/Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNGLView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNGLView.m00ab0f47044fb741^daca6747044fb741^---0#0#0#-19%DVTDocumentLocation2@71"file://localhost/Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNGLView.m0000000000000000^3027"CompileC build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNGLView.o wrapper/KNGLView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/RTSPPlayer    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/include -IFFmpeg_Angel/include -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/DerivedSources/armv7 -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/RTSPPlayer-Prefix-edjbfrokcqqpaqaqkjctgtiogczm/RTSPPlayer-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNGLView.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNGLView.dia -c /Volumes/MAC2/gitHub/repo/RTSPPlayer/wrapper/KNGLView.m -o /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/KNGLView.o36"2B1DA7BF-7D9B-405E-9BE1-D9BB1C4B8F60-
+
+CCompileC build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/SHAppDelegate.o /Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/SHAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s391054407.488829
+e391054407.606599
+r1
+xCompileC
+xbuild/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/SHAppDelegate.o
+x/Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/SHAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/SHAppDelegate.mbf477d47044fb741^85799b47044fb741^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/SHAppDelegate.m0000000000000000^3063"CompileC build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/SHAppDelegate.o RTSPPlayer/SHAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/RTSPPlayer    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/include -IFFmpeg_Angel/include -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/DerivedSources/armv7 -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/RTSPPlayer-Prefix-edjbfrokcqqpaqaqkjctgtiogczm/RTSPPlayer-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/SHAppDelegate.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/SHAppDelegate.dia -c /Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/SHAppDelegate.m -o /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/SHAppDelegate.o36"4B98E6C3-4878-4C90-9263-DAFECA963F31-
+
+CCompileC build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/SHViewController.o /Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/SHViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s391054407.524940
+e391054407.727743
+r1
+xCompileC
+xbuild/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/SHViewController.o
+x/Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/SHViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/SHViewController.mcb858647044fb741^e44dba47044fb741^---0#0#0#-19%DVTDocumentLocation2@82"file://localhost/Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/SHViewController.m0000000000000000^3081"CompileC build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/SHViewController.o RTSPPlayer/SHViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/RTSPPlayer    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/include -IFFmpeg_Angel/include -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/DerivedSources/armv7 -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/RTSPPlayer-Prefix-edjbfrokcqqpaqaqkjctgtiogczm/RTSPPlayer-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/SHViewController.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/SHViewController.dia -c /Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/SHViewController.m -o /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/SHViewController.o36"1016E134-0F2E-4352-9AE7-EDE2AED7B0CE-
+
+CCompileC build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/main.o /Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s391054407.421006
+e391054407.487540
+r1
+xCompileC
+xbuild/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/main.o
+x/Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/main.m04e86b47044fb741^f0df7c47044fb741^---0#0#0#-19%DVTDocumentLocation2@70"file://localhost/Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/main.m0000000000000000^3009"CompileC build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/main.o RTSPPlayer/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/RTSPPlayer    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/include -IFFmpeg_Angel/include -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/DerivedSources/armv7 -I/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/RTSPPlayer-Prefix-edjbfrokcqqpaqaqkjctgtiogczm/RTSPPlayer-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/main.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/main.dia -c /Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/main.m -o /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/main.o36"BFF20C68-6FE9-4989-8BCF-AC31BA7534C2-
+
+CCompileStoryboard /Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/en.lproj/MainStoryboard.storyboard
+r0
+
+CCopyPNGFile /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/Default-568h@2x.png RTSPPlayer/Default-568h@2x.png
+r0
+
+CCopyPNGFile /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/Default.png RTSPPlayer/Default.png
+r0
+
+CCopyPNGFile /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/Default@2x.png RTSPPlayer/Default@2x.png
+r0
+
+CCopyStringsFile /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/en.lproj/InfoPlist.strings RTSPPlayer/en.lproj/InfoPlist.strings
+s391054413.773938
+e391054413.776413
+r0
+xCopyStringsFile
+x/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/en.lproj/InfoPlist.strings
+xRTSPPlayer/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection42"Copy RTSPPlayer/en.lproj/InfoPlist.strings2a36c64d044fb741^8eb0fc4d044fb741^---1#0#0#-19%DVTDocumentLocation2@90"file://localhost/Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/en.lproj/InfoPlist.strings0000000000000000^562"CopyStringsFile build/Debug-iphoneos/RTSPPlayer.app/en.lproj/InfoPlist.strings RTSPPlayer/en.lproj/InfoPlist.strings    cd /Volumes/MAC2/gitHub/repo/RTSPPlayer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/en.lproj -- RTSPPlayer/en.lproj/InfoPlist.strings36"10381EA9-C065-4D38-A95B-DE79996E3ADB-
+
+CCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist build/Debug-iphoneos/RTSPPlayer.app/ResourceRules.plist
+s391054407.021152
+e391054407.024525
+r1
+xCpResource
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist
+xbuild/Debug-iphoneos/RTSPPlayer.app/ResourceRules.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy build/Debug-iphoneos/RTSPPlayer.app/ResourceRules.plisted820547044fb741^19550647044fb741^---0#0#0#-19%DVTDocumentLocation2@108"file://localhost/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/ResourceRules.plist000000000080d041^728"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist build/Debug-iphoneos/RTSPPlayer.app/ResourceRules.plist    cd /Volumes/MAC2/gitHub/repo/RTSPPlayer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app36"94AFE2A6-A9B4-4B0F-BBCA-212748C13E7C-
+
+CCpResource hello.mp4 build/Debug-iphoneos/RTSPPlayer.app/hello.mp4
+s391054413.772427
+e391054413.775704
+r0
+xCpResource
+xhello.mp4
+xbuild/Debug-iphoneos/RTSPPlayer.app/hello.mp4
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy build/Debug-iphoneos/RTSPPlayer.app/hello.mp499d3c54d044fb741^0caffc4d044fb741^-80"error: /Volumes/MAC2/gitHub/repo/RTSPPlayer/hello.mp4: No such file or directory1(21%IDEActivityLogMessage2@80"error: /Volumes/MAC2/gitHub/repo/RTSPPlayer/hello.mp4: No such file or directory-391054413#18446744073709551615#0#-2#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#11"PBXCp Error--0#0#0#-19%DVTDocumentLocation4@98"file://localhost/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/hello.mp4000000000080d041^531"CpResource hello.mp4 build/Debug-iphoneos/RTSPPlayer.app/hello.mp4    cd /Volumes/MAC2/gitHub/repo/RTSPPlayer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Volumes/MAC2/gitHub/repo/RTSPPlayer/hello.mp4 /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app36"4D4429E6-03FC-4305-84F3-1DF2BB113BBD-
+
+CGenerateDSYMFile /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app.dSYM /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/RTSPPlayer
+s391054410.416146
+e391054413.764167
+r1
+xGenerateDSYMFile
+x/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app.dSYM
+x/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/RTSPPlayer
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Generate /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app.dSYM809e6a4a044fb741^b285fc4d044fb741^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app.dSYM000000000080d041^602"GenerateDSYMFile build/Debug-iphoneos/RTSPPlayer.app.dSYM build/Debug-iphoneos/RTSPPlayer.app/RTSPPlayer    cd /Volumes/MAC2/gitHub/repo/RTSPPlayer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/RTSPPlayer -o /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app.dSYM36"C5DFD97B-6FA6-4F5B-9571-BED1271A7B87-
+
+CLd /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/RTSPPlayer normal armv7
+s391054407.734488
+e391054410.409098
+r1
+xLd
+x/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/RTSPPlayer
+xnormal
+xarmv7
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Link /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/RTSPPlayer1c24bc47044fb741^b2bb684a044fb741^---0#0#0#--1270"Ld build/Debug-iphoneos/RTSPPlayer.app/RTSPPlayer normal armv7    cd /Volumes/MAC2/gitHub/repo/RTSPPlayer    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -L/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos -L/Volumes/MAC2/gitHub/repo/RTSPPlayer/FFmpeg_Angel/lib -F/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos -filelist /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/Objects-normal/armv7/RTSPPlayer.LinkFileList -dead_strip -fobjc-link-runtime -miphoneos-version-min=6.1 -framework CoreAudio -framework AudioToolbox -framework OpenAL -framework QuartzCore -framework OpenGLES -lz.1.1.3 -framework UIKit -framework Foundation -framework CoreGraphics -lavcodec -lavdevice -lavfilter -lavformat -lavutil -lswresample -o /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/RTSPPlayer36"84A44C3A-3117-47FB-B0BA-E00DD81A3113-
+
+CProcessInfoPlistFile /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/Info.plist RTSPPlayer/RTSPPlayer-Info.plist
+s391054407.016693
+e391054407.045645
+r1
+xProcessInfoPlistFile
+x/Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/Info.plist
+xRTSPPlayer/RTSPPlayer-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection40"Process RTSPPlayer/RTSPPlayer-Info.plist03600447044fb741^3a240d47044fb741^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Volumes/MAC2/gitHub/repo/RTSPPlayer/RTSPPlayer/RTSPPlayer-Info.plist0000000000000000^742"ProcessInfoPlistFile build/Debug-iphoneos/RTSPPlayer.app/Info.plist RTSPPlayer/RTSPPlayer-Info.plist    cd /Volumes/MAC2/gitHub/repo/RTSPPlayer    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility RTSPPlayer/RTSPPlayer-Info.plist -genpkginfo /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/ResourceRules.plist -o /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/Info.plist36"75327E11-5DB9-49A3-BEC3-07ED050CB75C-
+
+CProcessPCH /Volumes/MAC2/gitHub/repo/RTSPPlayer/DerivedData/RTSPPlayer/Index/PrecompiledHeaders/RTSPPlayer-Prefix-edyegfriwzzbmjghrcdourfmnuhq_ast/RTSPPlayer-Prefix.pch.pth RTSPPlayer/RTSPPlayer-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/RTSPPlayer-Prefix-edjbfrokcqqpaqaqkjctgtiogczm/RTSPPlayer-Prefix.pch.pth RTSPPlayer/RTSPPlayer-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CProcessProductPackaging "/Users/ken/Library/MobileDevice/Provisioning Profiles/8DF0B3A2-5773-48DD-8E4B-2B2C639B2D51.mobileprovision" /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app/embedded.mobileprovision
+r0
+
+CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/RTSPPlayer.build/Debug-iphoneos/RTSPPlayer.build/RTSPPlayer.xcent
+r0
+
+CTouch /Volumes/MAC2/gitHub/repo/RTSPPlayer/build/Debug-iphoneos/RTSPPlayer.app
+r0
+
